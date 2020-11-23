@@ -1,21 +1,24 @@
 module.exports = {
-  mode: 'none',
+  mode: "development",
+  watch: true,
   resolve: {
-    extensions: ['.js' , '.jsx']
+    extensions: [".js", ".jsx"],
   },
   module: {
     rules: [
       {
         test: /\.jsx?$/,
         use: {
-          loader: 'babel-loader',
+          loader: "babel-loader",
           options: {
-            plugins: [
-              '@babel/plugin-transform-react-jsx'
-            ]
-          }
-        }
-      }
-    ]
-  }
+            plugins: ["@babel/plugin-transform-react-jsx"],
+          },
+        },
+      },
+      {
+        test: /\.css$/,
+        use: ["style-loader", "css-loader"],
+      },
+    ],
+  },
 };

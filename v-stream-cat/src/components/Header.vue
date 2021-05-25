@@ -26,7 +26,6 @@
             </g>
           </g>
         </svg>
-        <!-- <img src="" alt="" class="menu-logo-img"> -->
       </div>
     </div>
     <div class="search">
@@ -44,15 +43,19 @@
 </template>
 
 <script>
-export default {
-  name: 'Header'
-}
+  export default {
+    name: 'Header'
+  }
 </script>
 
 <style scoped>
   .header {
-    background-color: #333;
+    background-color: #222;
     height: 50px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
   .tw-body {

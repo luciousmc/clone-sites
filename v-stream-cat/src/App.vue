@@ -32,4 +32,13 @@ export default {
     a:hover {
       color: #a970ff;
     }
+
+  .btn {
+    padding: 10px;
+    color: whitesmoke;
+    background-color: #333;
+    border: 0;
+    border-radius: 8px;
+    cursor: pointer;
+  }
 </style>

@@ -27,16 +27,23 @@
           </g>
         </svg>
       </div>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="/" class="nav-link">Following</a></li>
+          <li><a href="/" class="nav-link">Browse</a></li>
+          <li><a href="/" class="nav-link">eSports</a></li>
+        </ul>
+      </nav>
     </div>
     <div class="search">
-      <input type="text" class="search-input">
-      <button class="search-button"></button>
+      <input type="text" class="search-input" placeholder="Search">
+      <button class="btn search-button">Search</button>
     </div>
     <div class="user">
       <i class="user-crown"></i>
       <i class="user-notifications"></i>
       <i class="user-msgs"></i>
-      <button class="user-get-bits-btn">Get Bits</button>
+      <button class="btn user-get-bits-btn">Get Bits</button>
       <div class="user-profile-img"></div>
     </div>
   </header>
@@ -50,7 +57,7 @@
 
 <style scoped>
   .header {
-    background-color: #222;
+    background-color: #111;
     height: 50px;
     padding: 10px;
     display: flex;
@@ -65,4 +72,42 @@
   .tw-face {
     fill: white;
   }
+
+  .menu {
+    display: flex;
+    align-items: center;
+  }
+
+  .menu ul {
+    display: flex;
+  }
+
+  .menu ul li {
+    margin-left: 30px;
+  }
+
+  .menu ul li a {
+    text-decoration: none;
+    font-size: 1.2rem;
+  }
+
+  .search-input {
+    width: 300px;
+    background-color: #444;
+    padding: 10px;
+    outline: none;
+    border: 1px solid #111;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    transition: border .1s ease-in;
+  }
+    .search-input:hover {
+      border: 1px solid whitesmoke;
+    }
+
+  .search-button {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
 </style>

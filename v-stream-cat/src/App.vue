@@ -16,10 +16,12 @@ export default {
 
 <style>
   :root {
-    --clr-purple:   #a970ff;
-    --clr-dark:     #111;
-    --clr-light:    #222;
-    --clr-lighter:  #333;
+    --clr-purple:       #a970ff;
+    --clr-dark:         #111;
+    --clr-light:        #222;
+    --clr-lighter:      #333;
+
+    --clr-txt-primary:  whitesmoke;
   }
 
 
@@ -32,25 +34,26 @@ export default {
   body {
     background-color: black;
     font-family: "Roobert", Arial, Helvetica, sans-serif;
+    color: var(--clr-txt-primary);
   }
 
   a {
-    color: whitesmoke;
+    color: var(--clr-txt-primary);
   }
     a:hover {
       color: var(--clr-purple);
     }
   
   .active {
-    border-bottom: 1px solid #a970ff;
-    color: #a970ff;
+    border-bottom: 1px solid var(--clr-purple);
+    color: var(--clr-purple);
     padding-bottom: 10px;
   }
 
   .btn {
     padding: 10px;
-    color: whitesmoke;
-    background-color: #333;
+    color: var(--clr-txt-primary);
+    background-color: var(--clr-lighter);
     border: 0;
     border-radius: 8px;
     cursor: pointer;

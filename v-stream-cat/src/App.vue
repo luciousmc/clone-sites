@@ -15,6 +15,14 @@ export default {
 </script>
 
 <style>
+  :root {
+    --clr-purple:   #a970ff;
+    --clr-dark:     #111;
+    --clr-light:    #222;
+    --clr-lighter:  #333;
+  }
+
+
   * {
     margin: 0;
     padding: 0;
@@ -30,8 +38,14 @@ export default {
     color: whitesmoke;
   }
     a:hover {
-      color: #a970ff;
+      color: var(--clr-purple);
     }
+  
+  .active {
+    border-bottom: 1px solid #a970ff;
+    color: #a970ff;
+    padding-bottom: 10px;
+  }
 
   .btn {
     padding: 10px;

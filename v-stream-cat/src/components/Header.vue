@@ -30,15 +30,17 @@
       <nav class="nav">
         <ul class="nav-list">
           <li><a href="/" class="nav-link">Following</a></li>
-          <li><a href="/" class="nav-link">Browse</a></li>
+          <li><a href="/" class="nav-link active">Browse</a></li>
           <li><a href="/" class="nav-link">eSports</a></li>
         </ul>
       </nav>
     </div>
+
     <div class="search">
       <input type="text" class="search-input" placeholder="Search">
       <button class="btn search-button">Search</button>
     </div>
+
     <div class="user">
       <i class="user-crown"></i>
       <i class="user-notifications"></i>
@@ -57,7 +59,7 @@
 
 <style scoped>
   .header {
-    background-color: #111;
+    background-color: var(--clr-dark);
     height: 50px;
     padding: 10px;
     display: flex;
@@ -65,8 +67,12 @@
     align-items: center;
   }
 
+  .header > * {
+    flex-basis: 100%;
+  }
+
   .tw-body {
-    fill: #a930ff;
+    fill: var(--clr-purple);
   }
 
   .tw-face {
@@ -91,12 +97,17 @@
     font-size: 1.2rem;
   }
 
+  .search {
+    text-align: center;
+  }
+
   .search-input {
     width: 300px;
     background-color: #444;
+    color: white;
     padding: 10px;
     outline: none;
-    border: 1px solid #111;
+    border: 1px solid var(--clr-dark);
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
     transition: border .1s ease-in;
@@ -110,4 +121,8 @@
     border-bottom-left-radius: 0;
   }
 
+  .user {
+    display: flex;
+    justify-content: flex-end;
+  }
 </style>

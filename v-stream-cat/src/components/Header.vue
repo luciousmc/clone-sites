@@ -90,6 +90,7 @@
 
   .menu ul li {
     margin-left: 30px;
+    list-style-type: none;
   }
 
   .menu ul li a {

@@ -1,0 +1,3 @@
+[submodule "r-amazonian-clone"]
+	path = r-amazonian-clone
+	url = https://github.com/sonnysangha/Amazon-starter-template-nextjs.git

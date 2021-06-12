@@ -36,15 +36,23 @@
       <i class="user-crown"></i>
       <i class="user-notifications"></i>
       <i class="user-msgs"></i>
-      <button class="user-get-bits-btn">Get Bits</button>
+      <button class="btn user-get-bits-btn">
+        <ChipIcon class="chipIcon" />
+        <p>Get Bits</p>
+      </button>
       <div class="user-profile-img"></div>
     </div>
   </header>
 </template>
 
 <script>
+  import { ChipIcon } from '@heroicons/vue/outline'
+
   export default {
-    name: 'Header'
+    name: 'Header',
+    components: {
+      ChipIcon
+    }
   }
 </script>
 
@@ -64,5 +72,20 @@
 
   .tw-face {
     fill: white;
+  }
+
+  .user-get-bits-btn {
+    display: flex;
+    align-items: center;
+  }
+
+  .user-get-bits-btn > p {
+    font-weight: bold;
+  }
+
+  .chipIcon {
+    width: 23px;
+    height: 23px;
+    margin-right: 4px;
   }
 </style>

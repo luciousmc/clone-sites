@@ -29,7 +29,19 @@ export default {
   a {
     color: whitesmoke;
   }
-    a:hover {
-      color: #a970ff;
-    }
+
+  a:hover {
+    color: #a970ff;
+  }
+
+  .btn {
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: lightgray;
+    cursor: pointer;
+  }
+
+  .btn:hover {
+    opacity: 0.8;
+  }
 </style>
